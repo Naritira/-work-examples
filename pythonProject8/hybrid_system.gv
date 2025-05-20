@@ -1,0 +1,20 @@
+// Гібридна система
+digraph {
+	A [label="Steam API"]
+	B [label="RAWG API"]
+	C [label="Обробка даних"]
+	D [label="Кластеризація (K-means)"]
+	E [label=KNN]
+	F [label=Apriori]
+	G [label="Комбінування результатів"]
+	H [label="Рекомендації"]
+	A -> C
+	B -> C
+	C -> D
+	C -> E
+	C -> F
+	D -> G
+	E -> G
+	F -> G
+	G -> H
+}
