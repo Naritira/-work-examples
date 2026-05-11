@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cavw1dot6pnje"]
+
+[ext_resource type="Script" uid="uid://bxvdm26206i7p" path="res://Player.cs" id="1_kpjcp"]
+[ext_resource type="Texture2D" uid="uid://ybtynl3wc3wr" path="res://kenney_desert-shooter-pack_1.0/PNG/Players/Tiles/tile_0000.png" id="2_kpjcp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_186t8"]
+radius = 7.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1535295588]
+collision_mask = 4
+script = ExtResource("1_kpjcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=890447061]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_kpjcp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1171648456]
+shape = SubResource("CircleShape2D_186t8")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1158064918]
+zoom = Vector2(4.83, 4.83)
